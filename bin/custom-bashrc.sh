@@ -6,7 +6,9 @@ then
     echo 'tmux already configured'
     exit 0
 else
-cat <<EOF >> ~/.bashrc
+# backslash in front of EOF makes everything literal
+echo 'adding tmux config to ~/.bashrc'
+cat <<\EOF >> ~/.bashrc
 
 # tmux!
 if [ -z "$SSH_TTY" ]; then
