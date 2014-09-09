@@ -9,4 +9,4 @@ if [ -d "$HOME/bin" ] ; then
 fi
 
 # use vim for man pages
-export MANPAGER="/bin/sh -c \"col -b | vim -c 'set ft=man ts=8 nomod nolist nonu noma' -\""
+export MANPAGER="/bin/sh -c \"col -b | view -c 'set ft=man ts=8 nomod nolist nonu noma' -\""
