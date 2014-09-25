@@ -8,7 +8,16 @@ else
 fi
 
 # tmux config file and separate session file
-alias tmux="SHELL=$SSHHOME/bashsshrc tmux -f $SSHHOME/.sshrc.d/tmux.conf -S /tmp/sshrc-tmux-c0p"
+tmuxrc() {
+    local TMUXDIR=/tmp/c0p-tmuxserver
+    if ! [ -d $TMUXDIR ]; then
+        rm -rf $TMUXDIR
+        mkdir -p $TMUXDIR
+    fi
+    rm -rf $TMUXDIR/.sshrc.d
+    cp -r $SSHHOME/.sshrc $SSHHOME/bashsshrc $SSHHOME/sshrc $SSHHOME/.sshrc.d $TMUXDIR
+    SSHHOME=$TMUXDIR SHELL=$TMUXDIR/bashsshrc /usr/bin/tmux -S $TMUXDIR/tmuxserver $@
+}
 export SHELL=$(which bash)
 
 # vim config file
