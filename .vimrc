@@ -44,5 +44,14 @@ let g:netrw_liststyle=3
 " Vertical split size
 let g:netrw_winsize = 30
 
+" Do not show hidden files
+let g:netrw_list_hide= '.*\.swp$'
+let g:netrw_list_hide =  '^\.[^\.],'
+let g:netrw_list_hide .= '\.pyc$,'
+let g:netrw_list_hide .= '\.pyc\s\+,'
+
 " Change directory to the current buffer when opening files.
 set autochdir
+
+" No banner
+let g:netrw_banner=0
