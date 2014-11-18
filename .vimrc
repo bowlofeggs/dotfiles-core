@@ -39,7 +39,7 @@ let g:netrw_browse_split = 4
 let g:netrw_altv = 1
 
 " Default to tree mode
-let g:netrw_liststyle=3
+let g:netrw_liststyle=0
 
 " Vertical split size
 let g:netrw_winsize = 30
