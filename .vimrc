@@ -42,7 +42,7 @@ let g:netrw_altv = 1
 let g:netrw_liststyle=0
 
 " Vertical split size
-let g:netrw_winsize = 30
+let g:netrw_winsize = 25 
 
 " Do not show hidden files
 let g:netrw_list_hide= '.*\.swp$'
