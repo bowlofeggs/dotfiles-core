@@ -3,13 +3,18 @@ set ts=4
 set sw=4
 set et
 set nowrap
-set mouse=a
 set background=dark
 set ignorecase
 set nocompatible
 " highlight whitespace at end of line
 match ErrorMsg /\s\+$/
 
+" Make resizing splits with the mouse work in tmux
+set mouse+=a
+if &term =~ '^screen'
+    " tmux knows the extended mouse mode
+    set ttymouse=xterm2
+endif
 
 " Hit enter in the file browser to open the selected
 " file with :vsplit to the right of the browser.
@@ -40,3 +45,5 @@ let g:netrw_banner=0
 " Open a file browser if no file specified
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | :E | endif
+
+
