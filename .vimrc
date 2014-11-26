@@ -28,7 +28,7 @@ let g:netrw_liststyle=0
 let g:netrw_preview=1
 
 " Vertical split size
-let g:netrw_winsize = 25 
+let g:netrw_winsize = 25
 
 " Do not show hidden files
 let g:netrw_list_hide= '.*\.swp$'
@@ -71,10 +71,9 @@ autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | :call ToggleVExplorer() | endif
 
 " Status bar
+set laststatus=2        "always show
 set statusline=%F       "full path to the file
-set statusline+=[%{strlen(&fenc)?&fenc:'none'}, "file encoding
-set statusline+=%{&ff}] "file format
-set statusline+=%h      "help file flag
+set statusline+=[%{&ff}] "file format
 set statusline+=%m      "modified flag
 set statusline+=%r      "read only flag
 set statusline+=%y      "filetype
