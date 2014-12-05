@@ -28,9 +28,22 @@ set statusline+=%c,     "cursor column
 set statusline+=%l/%L   "cursor line/total lines
 set statusline+=\ %P    "percent through file
 
-" nerdtree loading here
-execute pathogen#infect()
+" a couple of trees with tabs
+function! Setup_nerdtree()
+    " nerdtree loading here
+    NERDTree
+    tabnew
+    NERDTree
+    tabfirst
+endfunction
 
-" Open a file browser if no file specified
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | tabnew | NERDTree | tabfirst | endif
+" Fancy tree and tabs if pathogen is installed
+if filereadable(expand("~/.vim/autoload/pathogen.vim"))
+    runtime! autoload/pathogen.vim
+    if exists("g:loaded_pathogen")
+       execute pathogen#infect()
+    endif
+    " Open a file browser if no file specified
+    autocmd StdinReadPre * let s:std_in=1
+    autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | :call Setup_nerdtree() | endif
+endif
