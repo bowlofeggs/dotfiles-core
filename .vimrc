@@ -43,6 +43,8 @@ if filereadable(expand("~/.vim/autoload/pathogen.vim"))
     if exists("g:loaded_pathogen")
        execute pathogen#infect()
     endif
+    " Nerdtree toggle shortcut
+    map <C-n> :NERDTreeToggle<CR>
     " Open a file browser if no file specified
     autocmd StdinReadPre * let s:std_in=1
     autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | :call Setup_nerdtree() | endif
