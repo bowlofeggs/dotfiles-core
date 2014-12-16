@@ -1,0 +1,6 @@
+[$HOME/.config/vcsh/repo.d/dotfiles-desktop.git]
+checkout = vcsh clone 'git@github.com:robled/dotfiles-desktop.git' dotfiles-desktop
+update   = vcsh dotfiles-desktop pull
+push     = vcsh dotfiles-desktop push
+status   = vcsh dotfiles-desktop status
+gc       = vcsh dotfiles-desktop gc

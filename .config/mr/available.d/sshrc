@@ -1,0 +1,4 @@
+[opt/sshrc]
+checkout = git clone 'git@github.com:Russell91/sshrc.git' 'sshrc'
+# bash 'true' makes push not fail since we don't commit here
+push     = true

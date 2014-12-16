@@ -1,0 +1,4 @@
+[.icons/flattr]
+checkout = git clone 'git@github.com:NitruxSA/flattr-icons.git' ~/.icons/flattr
+# bash 'true' makes push not fail since we don't commit here
+push     = true
