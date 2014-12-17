@@ -19,3 +19,6 @@ fi
 
 # use vim for man pages
 export MANPAGER="/bin/sh -c \"col -b | view -c 'set ft=man ts=8 nomod nolist nonu noma' -\""
+
+# keep directory during mr update
+alias mrupdate="pushd $HOME && mr update; popd"
