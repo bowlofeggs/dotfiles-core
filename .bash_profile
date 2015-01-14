@@ -23,3 +23,6 @@ export MANPAGER="/bin/sh -c \"col -b | view -c 'set ft=man ts=8 nomod nolist non
 # keep directory during mr commands
 alias mrupdate="pushd $HOME && mr update; popd"
 alias mrpush="pushd $HOME && mr push; popd"
+
+# don't mess with me wget
+alias wgetmess="wget -r -nH --no-parent --reject="index.html*""
