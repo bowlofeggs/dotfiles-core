@@ -26,3 +26,6 @@ alias mrpush="pushd $HOME && mr push; popd"
 
 # don't mess with me wget
 alias wgetmess="wget -r -nH --no-parent --reject="index.html*""
+
+# colors for tmux
+alias tmux="tmux -2"
