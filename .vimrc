@@ -48,4 +48,6 @@ if filereadable(expand("~/.vim/autoload/pathogen.vim"))
     " Open a file browser if no file specified
     autocmd StdinReadPre * let s:std_in=1
     autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | :call Setup_nerdtree() | endif
+    " solarized!
+    colorscheme solarized
 endif
