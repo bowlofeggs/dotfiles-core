@@ -1,4 +1,5 @@
-[.vim/bundle/nerdtree]
-checkout = git clone 'git@github.com:altercation/vim-colors-solarized.git' ~/.vim/bundle/vim-colors-solarized
+[.vim/bundle/vim-colors-solarized]
+checkout = git clone 'https://github.com/altercation/vim-colors-solarized.git' ~/.vim/bundle/vim-colors-solarized
+update = git pull
 # bash 'true' makes push not fail since we don't commit here
 push     = true
