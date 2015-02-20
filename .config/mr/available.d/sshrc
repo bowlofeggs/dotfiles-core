@@ -1,4 +1,5 @@
 [opt/sshrc]
-checkout = git clone 'git@github.com:Russell91/sshrc.git' 'sshrc'
+checkout = git clone 'https://github.com/Russell91/sshrc.git' 'sshrc'
+update   = git pull
 # bash 'true' makes push not fail since we don't commit here
 push     = true
