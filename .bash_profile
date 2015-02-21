@@ -20,18 +20,5 @@ fi
 # use vim for man pages
 export MANPAGER="/bin/sh -c \"col -b | view -c 'set ft=man ts=8 nomod nolist nonu noma' -\""
 
-# keep directory during mr commands
-alias mrupdate="pushd $HOME && mr update; popd"
-alias mrpush="pushd $HOME && mr push; popd"
-
-# don't mess with me wget
-alias wgetmess="wget -r -nH --no-parent --reject="index.html*""
-
-# colors for tmux
-alias tmux="tmux -2"
-
-# htop solarized compatible
-alias htop="htop -C"
-
 # nmon graphs
 export NMON=cmdn.
