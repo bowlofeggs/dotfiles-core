@@ -29,3 +29,9 @@ alias wgetmess="wget -r -nH --no-parent --reject="index.html*""
 
 # colors for tmux
 alias tmux="tmux -2"
+
+# htop solarized compatible
+alias htop="htop -C"
+
+# nmon graphs
+export NMON=cmdn.
