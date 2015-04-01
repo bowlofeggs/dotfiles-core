@@ -20,7 +20,7 @@ alias mrupdate="pushd $HOME && mr update; popd"
 alias mrpush="pushd $HOME && mr push; popd"
 
 # don't mess with me wget
-alias wgetmess="wget -r -nH --no-parent --reject="index.html*""
+alias wgetmess="wget -r -nH --no-parent --reject="index.html*" -e robots=off"
 
 # colors for tmux
 alias tmux="tmux -2"
