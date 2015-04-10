@@ -27,3 +27,6 @@ alias tmux="tmux -2"
 
 # htop solarized compatible
 alias htop="htop -C"
+
+# more user friendly 'free'
+alias free="free -h | egrep --color 'buffers/cache.*|$'"
