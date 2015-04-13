@@ -30,3 +30,6 @@ alias htop="htop -C"
 
 # more user friendly 'free'
 alias free="free -h | egrep --color 'buffers/cache.*|$'"
+
+# more user friendly 'dmesg'
+alias dmesg="dmesg -T"
