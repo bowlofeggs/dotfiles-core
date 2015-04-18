@@ -33,3 +33,12 @@ alias free="free -h | egrep --color 'buffers/cache.*|$'"
 
 # more user friendly 'dmesg'
 alias dmesg="dmesg -T"
+
+# use case for tar extract
+function tarx() {
+    tar xfv "$@"
+}
+alias tarx=tarx
+
+# use case for tar list
+alias tarlist="tar tvf"
