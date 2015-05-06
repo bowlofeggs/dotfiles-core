@@ -42,3 +42,6 @@ alias tarx=tarx
 
 # use case for tar list
 alias tarlist="tar tvf"
+
+# open files!
+alias open="xdg-open"
