@@ -48,3 +48,6 @@ alias open="xdg-open"
 
 # use vim for 'view'
 alias view="vim -R"
+
+# previous directory
+alias prevdir='cd -'
