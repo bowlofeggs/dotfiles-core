@@ -51,3 +51,6 @@ if filereadable(expand("~/.vim/autoload/pathogen.vim"))
     " solarized!
     colorscheme solarized
 endif
+
+" make me a sandwich
+cmap w!! w !sudo tee % >/dev/null
