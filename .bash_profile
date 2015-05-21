@@ -13,3 +13,6 @@ export MANPAGER="/bin/sh -c \"col -b | vim -R -c 'set ft=man ts=8 nomod nolist n
 
 # nmon graphs
 export NMON=cmdn.
+
+# kerberos multi!
+export KRB5CCNAME=DIR:/tmp
