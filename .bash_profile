@@ -15,4 +15,11 @@ export MANPAGER="/bin/sh -c \"col -b | vim -R -c 'set ft=man ts=8 nomod nolist n
 export NMON=cmdn.
 
 # kerberos multi!
-export KRB5CCNAME=DIR:/tmp
+export KRB5CCNAME=DIR:~/srv/krb5tix
+
+# unlock default ssh key if not already done
+if [[ -f ~/.ssh/id_rsa ]]; then
+    if [[ ! $(ssh-add -l | grep '.ssh/id_rsa') ]]; then
+        ssh-add
+    fi
+fi
