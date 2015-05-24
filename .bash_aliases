@@ -51,3 +51,6 @@ alias view="vim -R"
 
 # previous directory
 alias prevdir='cd -'
+
+# dstat
+alias dstat='dstat --nocolor'
