@@ -54,3 +54,5 @@ alias prevdir='cd -'
 
 # dstat
 alias dstat='dstat --nocolor'
+
+alias ls='clear;exit'
